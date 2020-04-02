@@ -32,6 +32,7 @@
         android:layout_marginBottom="16dp"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -44,17 +45,18 @@
         android:layout_marginBottom="16dp"
         >
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:gravity="center"
         android:background="@drawable/btn_blue"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
@@ -67,7 +69,8 @@
             android:layout_height="30dp"
             android:background="@null"
             android:src="@drawable/icon_profile"
-            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
             />
 
         <TextView
@@ -77,11 +80,11 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:background="@android:color/transparent"
-            android:text="login"
+            android:text="Login"
             android:layout_weight="1"
             />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
